@@ -1,0 +1,25 @@
+Algoritmo,Tamanho,Tipo,Tempo (s)
+Insertion-Sort,50,crescente,3.861399454763159e-05
+Insertion-Sort,50,decrescente,0.00012814399815397337
+Insertion-Sort,50,aleatorio,4.643099964596331e-05
+Quick-Sort,50,crescente,4.005499795312062e-05
+Quick-Sort,50,decrescente,6.012700032442808e-05
+Quick-Sort,50,aleatorio,6.024300091667101e-05
+Insertion-Sort,500,crescente,0.000100737001048401
+Insertion-Sort,500,decrescente,0.017066023996449076
+Insertion-Sort,500,aleatorio,0.009050878004927654
+Quick-Sort,500,crescente,0.0006432470036088489
+Quick-Sort,500,decrescente,0.0006547960001626052
+Quick-Sort,500,aleatorio,0.0008339490013895556
+Insertion-Sort,5000,crescente,0.0013079039999865927
+Insertion-Sort,5000,decrescente,1.1810850160036352
+Insertion-Sort,5000,aleatorio,0.6540514509979403
+Quick-Sort,5000,crescente,0.004801133996807039
+Quick-Sort,5000,decrescente,0.004268573997251224
+Quick-Sort,5000,aleatorio,0.010847195000678767
+Insertion-Sort,50000,crescente,0.012407613998220768
+Insertion-Sort,50000,decrescente,126.52646394199837
+Insertion-Sort,50000,aleatorio,123.93573836800351
+Quick-Sort,50000,crescente,0.1267905279964907
+Quick-Sort,50000,decrescente,0.11535927400109358
+Quick-Sort,50000,aleatorio,0.23541937499976484
