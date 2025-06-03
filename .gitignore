@@ -1,0 +1,35 @@
+# Ambientes virtuais
+venv/
+.env/
+.venv/
+
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Arquivos temporários de execução
+*.log
+*.tmp
+*.out
+
+# Arquivos de sistema / IDEs
+.DS_Store
+*.swp
+*.bak
+.vscode/
+.idea/
+
+# Arquivos gerados por gráficos e resultados
+resultados/tempos.csv
+resultados/graficos/*.png
+
+# Arquivos de relatório gerado
+relatorio/*.pdf
+*.docx
+
+# Bibliotecas instaladas manualmente (caso use pip freeze)
+*.egg-info/
+dist/
+build/

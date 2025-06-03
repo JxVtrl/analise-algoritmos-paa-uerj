@@ -1,0 +1,114 @@
+==============================================
+ Análise Experimental de Algoritmos de Ordenação
+==============================================
+
+Aluno: João Vinícius Vitral
+Matrícula: 202010358111
+Disciplina: Projeto e Análise de Algoritmos - UERJ
+Entrega: 13/06/2025
+
+-------------------------------------------------
+📌 OBJETIVO DO TRABALHO
+-------------------------------------------------
+
+Comparar experimentalmente o desempenho dos algoritmos:
+- Insertion-Sort
+- Quick-Sort
+
+A análise é feita sobre vetores de tamanhos variados (50, 500, 5000 e 50000 elementos),
+e com diferentes ordens iniciais (crescente, decrescente e aleatória).
+
+São gerados gráficos comparando os tempos de execução dos algoritmos em cada caso,
+e os dados são organizados em um relatório de análise experimental.
+
+-------------------------------------------------
+🗂 ESTRUTURA DO PROJETO
+-------------------------------------------------
+
+algoritmos/            => Implementações dos algoritmos de ordenação
+testes/                => Scripts para teste, geração de dados e gráficos
+resultados/            => Arquivos gerados: tempos.csv e gráficos .png
+leiametxt/             => Este arquivo
+relatorio/             => Relatório final do trabalho (.docx ou .pdf)
+requirements.txt       => Arquivo com as dependências Python
+
+-------------------------------------------------
+⚙️ REQUISITOS PARA EXECUÇÃO
+-------------------------------------------------
+
+- Python 3.8 ou superior
+- Bibliotecas necessárias:
+
+  - matplotlib
+  - pandas
+  - tqdm
+
+Instale com o comando:
+    pip install -r requirements.txt
+
+*Recomendado*: criar um ambiente virtual com:
+    python3 -m venv venv
+    source venv/bin/activate
+
+-------------------------------------------------
+🚀 COMO EXECUTAR OS EXPERIMENTOS
+-------------------------------------------------
+
+1) Execute o script principal de testes para medir os tempos de execução:
+
+    python3 testes/teste_ordenacao.py
+
+  → Isso criará o arquivo `resultados/tempos.csv` com os dados brutos.
+
+2) Em seguida, gere os gráficos com:
+
+    python3 testes/plot_resultados.py
+
+  → Os gráficos serão salvos na pasta `resultados/graficos/` como imagens .png.
+
+-------------------------------------------------
+📝 SOBRE OS ALGORITMOS
+-------------------------------------------------
+
+- Insertion-Sort:
+  - Complexidade: O(n²)
+  - Vantagem: Muito eficiente com vetores quase ordenados
+  - Implementado manualmente, sem uso de funções Python prontas
+
+- Quick-Sort:
+  - Complexidade média: O(n log n)
+  - Melhor desempenho geral
+  - Utiliza pivô do meio para evitar pior caso em vetores ordenados
+
+-------------------------------------------------
+📈 ANÁLISE DOS DADOS
+-------------------------------------------------
+
+Os resultados e gráficos mostram claramente o comportamento esperado:
+
+- Insertion-Sort tem desempenho aceitável apenas com vetores pequenos ou já ordenados.
+- Quick-Sort tem desempenho superior na maioria dos casos.
+- O tempo de execução cresce rapidamente para o Insertion-Sort com grandes vetores decrescentes.
+
+A análise detalhada está documentada no arquivo `relatorio/Relatorio_Analise_Algoritmos_JoaoVitral.docx`.
+
+-------------------------------------------------
+📁 ARQUIVOS IMPORTANTES
+-------------------------------------------------
+
+- algoritmos/insertion_sort.py      → Implementação do Insertion-Sort
+- algoritmos/quick_sort.py          → Implementação do Quick-Sort
+- testes/teste_ordenacao.py         → Execução dos testes e coleta de dados
+- testes/plot_resultados.py         → Geração dos gráficos
+- resultados/tempos.csv             → Arquivo com os tempos medidos
+- resultados/graficos/*.png         → Gráficos dos testes
+- relatorio/*.docx                  → Relatório final com análise
+- leiametxt/leia_me.txt             → Instruções detalhadas
+
+-------------------------------------------------
+📞 CONTATO
+-------------------------------------------------
+
+Qualquer dúvida, entre em contato:
+📧 joao.vitral@grad.iprj.uerj.br (ou pelo GitHub: JxVtrl)
+
